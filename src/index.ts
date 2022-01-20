@@ -2,7 +2,7 @@ import TensorFlow from '@tensorflow/tfjs-node'
 import MobileNet from '@tensorflow-models/mobilenet'
 import fs from 'fs'
 
-let path = '../data/test/IMG_2989.JPG'
+let path = 'data/test/IMG_2989.JPG'
 const imageBuffer = fs.readFileSync(path)
 const tImage = TensorFlow.node.decodeImage(imageBuffer) as TensorFlow.Tensor3D
 
