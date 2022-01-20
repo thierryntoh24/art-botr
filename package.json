@@ -15,8 +15,8 @@
         "twitter"
     ],
     "scripts": {
-        "dev": "ts-node src/engine.ts",
-        "build": "tsc && ts-node src/engine.ts",
+        "dev": "ts-node src/index.ts",
+        "build": "tsc && ts-node src/index.ts",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "devDependencies": {
