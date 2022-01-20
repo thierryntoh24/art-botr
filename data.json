@@ -1,0 +1,163 @@
+{
+    "_maxResultsWhenFetchLast": 100,
+    "_realData": {
+        "data": [{
+            "in_reply_to_user_id": "1320118392569892865",
+            "referenced_tweets": [{
+                "type": "replied_to",
+                "id": "1483868480923443204"
+            }],
+            "author_id": "1320118392569892865",
+            "entities": {
+                "mentions": [{
+                        "start": 0,
+                        "end": 8,
+                        "username": "artbotr",
+                        "id": "1468507349065564167"
+                    },
+                    {
+                        "start": 28,
+                        "end": 36,
+                        "username": "artbotr",
+                        "id": "1468507349065564167"
+                    }
+                ]
+            },
+            "id": "1483894788797653000",
+            "text": "@artbotr Only one tweet now @artbotr .\nLet’s test this"
+        }],
+        "includes": {
+            "users": [{
+                    "id": "1320118392569892865",
+                    "name": "Thièrry Ntoh",
+                    "username": "thierry_ntoh24"
+                },
+                {
+                    "id": "1468507349065564167",
+                    "name": "Art?",
+                    "username": "artbotr"
+                }
+            ],
+            "tweets": [{
+                "in_reply_to_user_id": "1468507349065564167",
+                "attachments": {
+                    "media_keys": [
+                        "3_1483868429060820993",
+                        "3_1483868449742934016",
+                        "3_1483868449738797056",
+                        "3_1483868449755607046"
+                    ]
+                },
+                "referenced_tweets": [{
+                    "type": "replied_to",
+                    "id": "1483864899235241988"
+                }],
+                "author_id": "1320118392569892865",
+                "entities": {
+                    "mentions": [{
+                        "start": 0,
+                        "end": 8,
+                        "username": "artbotr",
+                        "id": "1468507349065564167"
+                    }],
+                    "urls": [{
+                            "start": 9,
+                            "end": 32,
+                            "url": "https://t.co/vxUhneWrU0",
+                            "expanded_url": "https://twitter.com/thierry_ntoh24/status/1483868480923443204/photo/1",
+                            "display_url": "pic.twitter.com/vxUhneWrU0"
+                        },
+                        {
+                            "start": 9,
+                            "end": 32,
+                            "url": "https://t.co/vxUhneWrU0",
+                            "expanded_url": "https://twitter.com/thierry_ntoh24/status/1483868480923443204/photo/1",
+                            "display_url": "pic.twitter.com/vxUhneWrU0"
+                        },
+                        {
+                            "start": 9,
+                            "end": 32,
+                            "url": "https://t.co/vxUhneWrU0",
+                            "expanded_url": "https://twitter.com/thierry_ntoh24/status/1483868480923443204/photo/1",
+                            "display_url": "pic.twitter.com/vxUhneWrU0"
+                        },
+                        {
+                            "start": 9,
+                            "end": 32,
+                            "url": "https://t.co/vxUhneWrU0",
+                            "expanded_url": "https://twitter.com/thierry_ntoh24/status/1483868480923443204/photo/1",
+                            "display_url": "pic.twitter.com/vxUhneWrU0"
+                        }
+                    ]
+                },
+                "id": "1483868480923443204",
+                "text": "@artbotr https://t.co/vxUhneWrU0"
+            }]
+        },
+        "meta": {
+            "oldest_id": "1483894788797653000",
+            "newest_id": "1483894788797653000",
+            "result_count": 1
+        }
+    },
+    "_rateLimit": {
+        "limit": 180,
+        "remaining": 178,
+        "reset": 1642625332
+    },
+    "_instance": {
+        "_rateLimits": {
+            "https://api.twitter.com/2/users/:id/mentions": {
+                "limit": 180,
+                "remaining": 178,
+                "reset": 1642625332
+            }
+        },
+        "_currentUser": null,
+        "_currentUserV2": null,
+        "_consumerToken": "qOhjWPZpXjKWQPSj9EQKRXYmd",
+        "_consumerSecret": "TxrbYOVFwiLzSQCTsEuW4XY5HTEfifKor6o0iWUAb8qI1VAFL3",
+        "_accessToken": "1468507349065564167-e2EVc2O80AjA7lm25F2xgUYJwxxIHO",
+        "_accessSecret": "2gDXpTPIQWFYxBzBvFOgnrzJLWr5RV5MGiLnR9Iaug6u3",
+        "_oauth": {
+            "nonceLength": 32,
+            "consumerKeys": {
+                "key": "qOhjWPZpXjKWQPSj9EQKRXYmd",
+                "secret": "TxrbYOVFwiLzSQCTsEuW4XY5HTEfifKor6o0iWUAb8qI1VAFL3"
+            }
+        },
+        "_prefix": "https://api.twitter.com/2/"
+    },
+    "_queryParams": {
+        "since_id": "1483890454395506696",
+        "max_results": 12,
+        "expansions": [
+            "attachments.media_keys",
+            "author_id",
+            "entities.mentions.username",
+            "referenced_tweets.id",
+            "referenced_tweets.id.author_id"
+        ],
+        "tweet.fields": [
+            "id",
+            "attachments",
+            "referenced_tweets",
+            "text",
+            "entities",
+            "in_reply_to_user_id"
+        ],
+        "media.fields": [
+            "media_key",
+            "type",
+            "url"
+        ],
+        "user.fields": [
+            "name",
+            "id"
+        ]
+    },
+    "_sharedParams": {
+        "id": "1468507349065564167"
+    },
+    "_endpoint": "users/:id/mentions"
+}

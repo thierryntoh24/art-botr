@@ -1,0 +1,37 @@
+{
+    "name": "art-review-bot",
+    "version": "1.0.0",
+    "description": "A twitter bot written in Typescript that uses AI to determine whether or not 'artwwork' is actually 'art'.",
+    "main": "src/index.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/thierryntoh/basil-plugin.git"
+    },
+    "author": "Thiérry Ntoh <thierryntoh24@gmail.com> (http://thierryntoh.webflow.io)",
+    "license": "MIT",
+    "keywords": [
+        "ai",
+        "art",
+        "twitter"
+    ],
+    "scripts": {
+        "dev": "ts-node src/engine.ts",
+        "build": "tsc && ts-node src/engine.ts",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "devDependencies": {
+        "@types/node": "^17.0.8",
+        "ts-node": "^10.4.0",
+        "tsc-node": "^0.0.3",
+        "typescript": "^4.5.4"
+    },
+    "dependencies": {
+        "@tensorflow-models/mobilenet": "^2.1.0",
+        "@tensorflow/tfjs-node": "^3.13.0",
+        "dotenv": "^10.0.0",
+        "image-downloader": "^4.0.3",
+        "moment": "^2.29.1",
+        "request": "^2.88.2",
+        "twitter-api-v2": "^1.9.1"
+    }
+}
