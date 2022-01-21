@@ -25,4 +25,4 @@ const classify = async () => {
 if (process.argv.length !== 3)
     throw new Error('Incorrect argument blah blah <Im> ')
 
-classifyImage()
+classify()
