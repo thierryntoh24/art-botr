@@ -6,7 +6,7 @@ let imagePath = 'data/test/IMG_2989.JPG'
 
 const classify = async () => {
   const image = fs.readFileSync(imagePath);
-  const decodedImage = TensorFlow.node.decodeImage(image) as TensorFlow.Tensor3D;
+  const decodedImage = TensorFlow.node.decodeImage(image, 3) as TensorFlow.Tensor3D;
 
   const model = await MobileNet.load();
   const predictions = await model.classify(decodedImage);
@@ -22,7 +22,7 @@ const classify = async () => {
 //     console.log('Classificction : ', predicton)
 // }
 
-if (process.argv.length !== 3)
-    throw new Error('Incorrect argument blah blah <Im> ')
+if (process.argv.length !== 3) 
+    throw new Error('Usage: node test-tf.js <image-file>')
 
-classify()
+classify(process.argv[2])
