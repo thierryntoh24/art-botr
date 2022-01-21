@@ -4,11 +4,11 @@ import fs from 'fs'
 
 let imagePath = 'data/test/IMG_2989.JPG'
 
-const classify = async (imagePath) => {
+const classify = async () => {
   const image = fs.readFileSync(imagePath);
-  const decodedImage = tfnode.node.decodeImage(image);
+  const decodedImage = TensorFlow.node.decodeImage(image);
 
-  const model = await mobilenet.load();
+  const model = await MobileNet.load();
   const predictions = await model.classify(decodedImage);
   console.log('predictions: ', predictions);
 }
