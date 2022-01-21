@@ -6,7 +6,7 @@ let imagePath = 'data/test/IMG_2989.JPG'
 
 const classify = async () => {
   const image = fs.readFileSync(imagePath);
-  const decodedImage = TensorFlow.node.decodeImage(image);
+  const decodedImage = TensorFlow.node.decodeImage(image) as TensorFlow.Tensor3D;
 
   const model = await MobileNet.load();
   const predictions = await model.classify(decodedImage);
