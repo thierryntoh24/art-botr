@@ -8,7 +8,7 @@ const classify = async () => {
   const image = fs.readFileSync(imagePath);
   const decodedImage = TensorFlow.node.decodeImage(image) as TensorFlow.Tensor3D;
 
-  const model = await MobileNet.load();
+  const model = await MobileNet.load({2,0.5});
   const predictions = await model.classify(decodedImage);
   console.log('predictions: ', predictions);
 }
