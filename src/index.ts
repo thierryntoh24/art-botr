@@ -12,7 +12,7 @@ const classify = async () => {
   const model = await MobileNet.load({version: 2,alpha: 0.5});
   const predictions = await model.classify(decodedImage);
   console.log('predictions: ', predictions);
-  } catch(err) {console.log('Error at >>>' err)}
+  } catch(err) {console.log('Error at >>>', err)}
 }
 
 // const imageBuffer = fs.readFileSync(path)
