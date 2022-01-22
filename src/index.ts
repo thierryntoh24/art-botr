@@ -5,12 +5,14 @@ import fs from 'fs'
 let imagePath = 'data/test/IMG_2989.JPEG'
 
 const classify = async () => {
+  try {
   const image = fs.readFileSync(imagePath);
   const decodedImage = TensorFlow.node.decodeImage(image) as TensorFlow.Tensor3D;
 
   const model = await MobileNet.load({version: 2,alpha: 0.5});
   const predictions = await model.classify(decodedImage);
   console.log('predictions: ', predictions);
+  } catch(err) {console.log('Error at >>>' err)}
 }
 
 // const imageBuffer = fs.readFileSync(path)
