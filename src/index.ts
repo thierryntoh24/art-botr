@@ -2,11 +2,11 @@ import * as TensorFlow from '@tensorflow/tfjs-node'
 import MobileNet from '@tensorflow-models/mobilenet'
 import fs from 'fs'
 
-let imagePath = 'data/test/IMG_2989.JPG'
+let imagePath = 'data/test/IMG_2989.JPEG'
 
 const classify = async () => {
   const image = fs.readFileSync(imagePath);
-  const decodedImage = TensorFlow.node.decodeImage(image, 3) as TensorFlow.Tensor3D;
+  const decodedImage = TensorFlow.node.decodeImage(image) as TensorFlow.Tensor3D;
 
   const model = await MobileNet.load();
   const predictions = await model.classify(decodedImage);
