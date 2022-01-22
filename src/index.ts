@@ -22,7 +22,7 @@ const classify = async () => {
 //     console.log('Classificction : ', predicton)
 // }
 
-if (process.argv.length !== 3) 
-    throw new Error('Usage: node test-tf.js <image-file>')
+// if (process.argv.length !== 3) 
+//     throw new Error('Usage: node test-tf.js <image-file>')
 
 classify()
