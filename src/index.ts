@@ -1,17 +1,18 @@
-import * as TensorFlow from '@tensorflow/tfjs-node'
+// import * as TensorFlow from '@tensorflow/tfjs-node'
 import MobileNet from '@tensorflow-models/mobilenet'
-import fs from 'fs'
+// import fs from 'fs'
 
-let imagePath = 'data/test/IMG_2989.JPEG'
+// let imagePath = 'data/test/IMG_2989.JPEG'
 
 const classify = async () => {
   try {
-  const image = fs.readFileSync(imagePath);
-  const decodedImage = TensorFlow.node.decodeImage(image) as TensorFlow.Tensor3D;
+//   const image = fs.readFileSync(imagePath);
+//   const decodedImage = TensorFlow.node.decodeImage(image) as TensorFlow.Tensor3D;
 
-  const model = await MobileNet.load({version: 2,alpha: 0.5});
-  const predictions = await model.classify(decodedImage);
-  console.log('predictions: ', predictions);
+  const model = await MobileNet.load();
+    console.log('Loaded mobilenet)
+//   const predictions = await model.classify(decodedImage);
+//   console.log('predictions: ', predictions);
   } catch(err) {console.log('Error at >>>', err)}
 }
 
